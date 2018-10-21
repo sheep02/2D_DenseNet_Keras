@@ -1,1 +1,1 @@
-# 2D_DenseNet_Keras
+# 2D-DenseNet Keras

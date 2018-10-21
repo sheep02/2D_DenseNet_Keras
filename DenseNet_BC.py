@@ -52,7 +52,7 @@ class DenseNet():
     
         for i in range(nb_layers):
             branch = i+1
-            x = self.conv(concat_feat, stage, branch, growth_rate, dropout_rate)
+            x = self.conv(concat_feat, stage, branch, nb_filter, dropout_rate)
             concat_feat = concatenate([concat_feat, x], axis=self.concat_axis, name=f"concat_{stage}_{branch}")
     
             if grow_nb_filters:
